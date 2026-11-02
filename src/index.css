@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --color-primary: #1A396D;
+  --color-primary-hover: #142C54;
+  --color-primary-active: #0F2242;
+  --color-primary-light: #EEF3F9;
+  --color-primary-border: #BFD3F0;
+  --p: #1A396D;
+  --pc: #ffffff;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* =======================================================
+   GLOBAL THEME ENFORCEMENT: PRIMARY #1A396D (NAVY BLUE)
+   ======================================================= */
+.btn-primary {
+  background-color: #1A396D !important;
+  border-color: #1A396D !important;
+  color: #ffffff !important;
+}
+.btn-primary:hover {
+  background-color: #142C54 !important;
+  border-color: #142C54 !important;
+}
+.btn-primary:active {
+  background-color: #0F2242 !important;
+  border-color: #0F2242 !important;
+}
+
+.btn-outline.btn-primary {
+  background-color: transparent !important;
+  border-color: #1A396D !important;
+  color: #1A396D !important;
+}
+.btn-outline.btn-primary:hover {
+  background-color: #1A396D !important;
+  border-color: #1A396D !important;
+  color: #ffffff !important;
+}
+
+.badge-primary {
+  background-color: #1A396D !important;
+  border-color: #1A396D !important;
+  color: #ffffff !important;
+}
+.badge-outline.badge-primary {
+  background-color: #EEF3F9 !important;
+  border-color: #BFD3F0 !important;
+  color: #1A396D !important;
+}
+
+.text-primary {
+  color: #1A396D !important;
+}
+.bg-primary {
+  background-color: #1A396D !important;
+  color: #ffffff !important;
+}
+.border-primary {
+  border-color: #1A396D !important;
+}
+.ring-primary {
+  --tw-ring-color: #1A396D !important;
+}
+
+.input-primary:focus,
+.input-primary:focus-within {
+  border-color: #1A396D !important;
+  outline-color: #1A396D !important;
+  box-shadow: 0 0 0 3px rgba(26, 57, 109, 0.18) !important;
+}
+
+.range-primary {
+  accent-color: #1A396D !important;
+}
+.range-primary::-webkit-slider-thumb {
+  background-color: #1A396D !important;
+}
+.range-primary::-moz-range-thumb {
+  background-color: #1A396D !important;
+}
+
+.checkbox-primary:checked,
+.checkbox:checked {
+  background-color: #1A396D !important;
+  border-color: #1A396D !important;
+}
